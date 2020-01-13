@@ -25,7 +25,8 @@ setup(
     author_email='juanernestobiondi@gmail.com',
     python_requires='>=3.4.0',
     url='https://github.com/yeyeto2788/GPIO_Calculator',
-    packages=["gpio_calculator", "gpio_calculator.calculator"],
+    packages=['gpio_calculator', 'gpio_calculator.calculator'],
+    include_package_data=True,
     license='MIT',
     classifiers=[
         # Trove classifiers

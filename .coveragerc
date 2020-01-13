@@ -5,4 +5,4 @@ omit =
     *setup.py*
     tests/*
     demo/*
-    */__init__.py
+    venv/*

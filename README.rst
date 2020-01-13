@@ -1,7 +1,8 @@
 GPIO\_Calculator
 ================
 
-Simple GPIO calculator for libgpiod based on its chardev
+Simple GPIO calculator for ``libgpiod`` based on its chardev using the formula
+chardev = (alphabet_index - 1) * 32 + pin which is also used on ``sysfs``.
 
 Installation
 ------------
@@ -35,3 +36,24 @@ Usage
     # Returns all pins found H18, H19, H20.
     calculator.get_pins([242, 243, 244])
 
+
+Contributing
+------------
+
+**All contributions, pull requests and comments are welcome!**
+
+When contributing it is important to test the module in order to make sure
+everything is working as expected. For that install dependencies to run the tests.
+
+.. code::
+
+   pip install pytest pytest-cov mock pylint
+
+Running tests and see coverage.
+
+.. code::
+
+   py.test --cov -v --cov-config=.coveragerc --cov-report=html
+
+This will generate a report with the coverage which is at **98%** now, let's try to keep
+it at the same percentage.
