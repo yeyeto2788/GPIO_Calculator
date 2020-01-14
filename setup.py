@@ -15,7 +15,7 @@ with io.open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='GPIO-Calculator',
-    version='1.0.1',
+    version='1.0.2',
     use_scm_version=False,
     setup_requires=["setuptools_scm"],
     description='Simple GPIO calculator for libgpiod based on its chardev.',
