@@ -87,7 +87,7 @@ class Calculator:
             for pin in pins:
 
                 if self.get_chardev(letter, pin) == chardev:
-                    combinations.append(f"{letter}{pin}")
+                    combinations.append("{letter}{pin}".format(letter=letter, pin=pin))
 
         if len(combinations) == 1:
             return combinations[0]
