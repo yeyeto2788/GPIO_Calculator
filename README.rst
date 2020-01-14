@@ -7,14 +7,14 @@ chardev = (alphabet_index - 1) * 32 + pin which is also used on ``sysfs``.
 Installation
 ------------
 
-.. code::
+.. code-block:: console
 
     pip install git+https://github.com/yeyeto2788/GPIO_Calculator
 
 Usage
 -----
 
-.. code::
+.. code-block:: python
 
     from gpio_calculator import Calculator
 
@@ -45,13 +45,13 @@ Contributing
 When contributing it is important to test the module in order to make sure
 everything is working as expected. For that install dependencies to run the tests.
 
-.. code::
+.. code-block:: console
 
    pip install pytest pytest-cov mock pylint
 
 Running tests and see coverage.
 
-.. code::
+.. code-block:: console
 
    py.test --cov -v --cov-config=.coveragerc --cov-report=html
 
