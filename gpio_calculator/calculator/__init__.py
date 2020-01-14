@@ -30,7 +30,7 @@ class Calculator:
 
         except ValueError:
             raise ValueError(
-                f"Seems like {pin_string[1:]} cannot be translated into a pin."
+                "Seems like {} cannot be translated into a pin.".format(pin_string[1:])
             )
 
         else:
