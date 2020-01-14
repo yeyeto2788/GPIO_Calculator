@@ -22,7 +22,7 @@ class TestCalculator(TestCase):
         expected = "H18"
         obtained = self.calculator.get_pin(242)
 
-        self.assertEqual(expected, obtained, msg=f"Expected: {expected}, Obtained: {obtained}")
+        self.assertEqual(expected, obtained, msg="Expected: {}, Obtained: {}".format(expected, obtained))
 
     def test_get_pins(self):
         """Test the `Calculator.get_pins` method."""
@@ -32,14 +32,14 @@ class TestCalculator(TestCase):
         }
         obtained = self.calculator.get_pins([242, 243])
 
-        self.assertEqual(expected, obtained, msg=f"Expected: {expected}, Obtained: {obtained}")
+        self.assertEqual(expected, obtained, msg="Expected: {}, Obtained: {}".format(expected, obtained))
 
     def test_get_chardev(self):
         """Test the `Calculator.get_chardev` method."""
         expected = 242
         obtained = self.calculator.get_chardev("H", 18)
 
-        self.assertEqual(expected, obtained, msg=f"Expected: {expected}, Obtained: {obtained}")
+        self.assertEqual(expected, obtained, msg="Expected: {}, Obtained: {}".format(expected, obtained))
 
     def test_get_chardev_lowercase(self):
         """Test the `Calculator.get_chardev` method.
@@ -49,7 +49,7 @@ class TestCalculator(TestCase):
         expected = 242
         obtained = self.calculator.get_chardev("h", 18)
 
-        self.assertEqual(expected, obtained, msg=f"Expected: {expected}, Obtained: {obtained}")
+        self.assertEqual(expected, obtained, msg="Expected: {}, Obtained: {}".format(expected, obtained))
 
     def test_get_chardevs(self):
         """Test the `Calculator.get_chardevs` method."""
@@ -59,7 +59,7 @@ class TestCalculator(TestCase):
         }
         obtained = self.calculator.get_chardevs(["H18", "H19"])
 
-        self.assertEqual(expected, obtained, msg=f"Expected: {expected}, Obtained: {obtained}")
+        self.assertEqual(expected, obtained, msg="Expected: {}, Obtained: {}".format(expected, obtained))
 
     def test_get_pin_from_string(self):
         """Test the `Calculator._get_pin_from_string` method."""
@@ -67,7 +67,7 @@ class TestCalculator(TestCase):
         expected = 18
         obtained = self.calculator._get_pin_from_string("H18")
 
-        self.assertEqual(expected, obtained, msg=f"Expected: {expected}, Obtained: {obtained}")
+        self.assertEqual(expected, obtained, msg="Expected: {}, Obtained: {}".format(expected, obtained))
 
     def test_get_pin_from_string_abnormal(self):
         """Test the `Calculator._get_pin_from_string` method.
