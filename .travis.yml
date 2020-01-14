@@ -17,5 +17,5 @@ install:
 # Execute the tests and the linter
 script:
   - pytest --cov=gpio_calculator
-  - pylint --output-format=text --rcfile=.pylintrc --errors-only open_note_scanner
+  - pylint --output-format=text --rcfile=.pylintrc --errors-only gpio_calculator
   - echo "Done"
